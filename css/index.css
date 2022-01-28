@@ -2,6 +2,19 @@ p {
   margin: unset;
 }
 
+#header {
+  background-color: #efc83d;
+}
+
+#header .set-bg {
+  background-color: #0470d2;
+  clip-path: polygon(100% 0%, 100% 80%, 73% 80%, 71% 90%, 0 90%, 0 0);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffff;
+}
+
 .main-page {
   background-color: #f4f4f4;
   min-height: 100vh;
@@ -51,10 +64,20 @@ p {
   padding: 10px;
 }
 
-.name-pro,
 .price-pro {
+  color: #ff1313;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.name-pro {
+  color: #0470d2;
+  font-size: 16px;
   font-weight: 600;
-  font-size: 20px;
+}
+
+.vnd-set{
+  font-size: 14px;
 }
 
 /* line 304, home.scss */
@@ -124,7 +147,6 @@ p {
   .logo-shopee
   img {
   width: 100%;
-  
 }
 /* line 361, home.scss */
 .info-service-web .container-info-service .contact-web .content .fa-linkedin {
@@ -180,7 +202,7 @@ p {
   font-weight: 550;
 }
 
-.set-size{
+.set-size {
   width: 50px;
   display: flex !important;
   justify-content: center;
@@ -189,12 +211,12 @@ p {
 }
 
 .set-size:hover,
-.logo-shopee:hover{
+.logo-shopee:hover {
   text-decoration: unset;
   opacity: 0.7;
 }
 
-.set-icon{
+.set-icon {
   font-size: 24px;
   color: #fff;
 }

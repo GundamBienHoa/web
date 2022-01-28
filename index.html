@@ -48,60 +48,68 @@
     <![endif]-->
 
     <header id="header">
-      <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand wow lightSpeedIn" href="#">
-          <img
-            src="image/logo.jpg"
-            width="80"
-            height="80"
-            class="d-inline-block align-top"
-            alt=""
-          />
-        </a>
+      <div class="set-bg">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+          <a class="navbar-brand wow lightSpeedIn" href="#">
+            <img
+              src="image/logo1.png"
+              width="80"
+              height="80"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="mr-auto"></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mr-auto"></div>
 
-          <ul class="navbar-nav my-2 my-lg-0 wow lightSpeedIn nav-menu">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Trang chủ </a>
-            </li>
-            <li class="nav-item">
-              <a target="_blank" class="nav-link" href="https://shp.ee/caprvm4">
-                Shopee
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                target="_blank"
-                class="nav-link"
-                href="https://www.facebook.com/groups/446695419006085"
-              >
-                Cộng đồng
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Liên hệ</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <ul class="navbar-nav my-2 my-lg-0 wow lightSpeedIn nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#header">Trang chủ </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  target="_blank"
+                  class="nav-link"
+                  href="https://shp.ee/caprvm4"
+                >
+                  Shopee
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  target="_blank"
+                  class="nav-link"
+                  href="https://www.facebook.com/groups/446695419006085"
+                >
+                  Cộng đồng
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main-page">
       <div class="container">
-        <h3 class="name-menu">Danh sách mặt hàng có tại shop Gundam Biên Hòa</h3>
+        <h3 class="name-menu">
+          Danh sách mặt hàng có tại shop Gundam Biên Hòa
+        </h3>
         <div class="menu-pro" id="menu"></div>
       </div>
     </main>
@@ -162,6 +170,7 @@
           <span>GUNDAM BIÊN HÒA</span>
         </p>
       </div>
+      
     </footer>
 
     <script src="lib/jquery/jquery.min.js"></script>
@@ -209,7 +218,7 @@
             </div>
             <div class="info">
               <p class="name-pro">${element.name}</p>
-              <p class="price-pro">${formatPrice(element.price)}</p>
+              <p class="price-pro">${formatPrice(element.price)} <span class="vnd-set"> VND </span></p>
             </div>
             <a href="#" class=""></a>
           </div>
@@ -235,7 +244,7 @@
 
       function formatPrice(value) {
         let val = (value / 1).toFixed(0).replace(".", ",");
-        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " ₫";
+        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") ;
       }
 
       new WOW().init();
