@@ -217,3 +217,18 @@ p {
   font-size: 24px;
   color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+  .menu-pro {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-service-web .container-info-service {
+    padding: 30px 10px;
+    flex-direction: column;
+  }
+
+  .info-service-web .container-info-service .contact-web .content {
+    width: fit-content;
+  }
+}
