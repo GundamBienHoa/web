@@ -40,15 +40,12 @@ p {
   cursor: pointer;
 }
 
-.item-pro a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+.item-pro:hover div.wrap-img img {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.item-pro div.wrap-img img {
+  transition: all 0.7s;
 }
 
 .wrap-img {
@@ -76,7 +73,7 @@ p {
   font-weight: 600;
 }
 
-.vnd-set{
+.vnd-set {
   font-size: 14px;
 }
 
