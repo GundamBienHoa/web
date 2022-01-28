@@ -80,7 +80,8 @@ p {
 /* line 304, home.scss */
 .info-service-web {
   width: 100%;
-  background-color: #fff;
+  background-color: #0470d2;
+  color: #fff;
 }
 /* line 307, home.scss */
 .info-service-web .container-info-service {
@@ -165,7 +166,7 @@ p {
 .content a {
   display: block;
   padding: 5px;
-  color: #2f8dd2;
+  color: #fff;
 }
 
 /* line 385, home.scss */
@@ -176,26 +177,26 @@ p {
 .title-service h4 {
   text-transform: uppercase;
   font-weight: 500;
-  border-bottom: 2px solid #495057;
+  border-bottom: 2px solid #fff;
 }
 
 /* line 394, home.scss */
 .container-footer {
-  border-top: 3px solid #30698c;
+  border-top: 3px solid #efc83d;
   width: 100%;
-  background-color: unset;
+  background-color: #0470d2;
   padding: 30px;
 }
 /* line 399, home.scss */
 .container-footer p {
   text-align: center;
   font-size: 15px;
-  color: #596672;
+  color: #ffff;
   font-weight: 500;
 }
 /* line 404, home.scss */
 .container-footer p span {
-  color: #e83030;
+  color: #bb0000;
   font-weight: 550;
 }
 
