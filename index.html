@@ -107,7 +107,7 @@
 
     <main class="main-page">
       <div class="container">
-        <h3 class="name-menu">
+        <h3 class="name-menu" id="titleshop">
           Danh sách mặt hàng có tại shop Gundam Biên Hòa
         </h3>
         <div class="menu-pro" id="menu"></div>
@@ -170,7 +170,6 @@
           <span>GUNDAM BIÊN HÒA</span>
         </p>
       </div>
-      
     </footer>
 
     <script src="lib/jquery/jquery.min.js"></script>
@@ -218,7 +217,9 @@
             </div>
             <div class="info">
               <p class="name-pro">${element.name}</p>
-              <p class="price-pro">${formatPrice(element.price)} <span class="vnd-set"> VND </span></p>
+              <p class="price-pro">${formatPrice(
+                element.price
+              )} <span class="vnd-set"> VND </span></p>
             </div>
             <a href="#" class=""></a>
           </div>
@@ -235,16 +236,20 @@
           var listgundam = [];
           snapshot.forEach((element) => {
             listgundam.push(element.val());
-            console.log(element.val());
           });
 
           AddAllItemToTable(listgundam);
+        });
+
+        get(child(dbRef, "Title")).then((snapshot) => {
+          var titleshop = document.getElementById("titleshop");
+          titleshop.innerHTML = snapshot.val();
         });
       }
 
       function formatPrice(value) {
         let val = (value / 1).toFixed(0).replace(".", ",");
-        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") ;
+        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
       }
 
       new WOW().init();
