@@ -261,4 +261,12 @@ p {
   .info-service-web .container-info-service .contact-web .content {
     width: fit-content;
   }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .mini-container {
+    align-self: unset;
+  }
 }
