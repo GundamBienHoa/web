@@ -217,9 +217,21 @@
             </div>
             <div class="info">
               <p class="name-pro">${element.name}</p>
-              <p class="price-pro">${formatPrice(
-                element.price
-              )} <span class="vnd-set"> VND </span></p>
+              <div class="flex-container">
+                <div>
+                  <span class="title-price">Giá dự kiến</span>
+                  <p class="price-pro">
+                  ${formatPrice(
+                    element.price
+                  )} <span class="vnd-set"> VND </span></p>
+                </div>
+                <div class="mini-container">
+                  <p>Slot: <span> Còn </span></p>
+                  <p class="mini-price">Cọc: <span> ${formatPrice(
+                    element.deposit
+                  )}<span class="vnd-set-mini"> VND </span> </span></p>
+                </div>
+              </div>
             </div>
             <a href="#" class=""></a>
           </div>

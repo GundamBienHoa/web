@@ -64,7 +64,15 @@ p {
 .price-pro {
   color: #ff1313;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.title-price {
+  color: #ff1313;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 3px;
+  display: block;
 }
 
 .name-pro {
@@ -217,6 +225,27 @@ p {
 .set-icon {
   font-size: 24px;
   color: #fff;
+}
+
+.vnd-set-mini {
+  font-size: 8px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mini-container {
+  color: #1e950a;
+  font-weight: 600;
+  align-self: center;
+}
+
+.mini-price {
+  font-size: 14px;
+  display: block;
+  padding-top: 1px;
 }
 
 @media screen and (max-width: 500px) {
