@@ -257,7 +257,7 @@
 
         get(child(dbRef, "Title")).then((snapshot) => {
           var titleshop = document.getElementById("titleshop");
-          titleshop.innerHTML = snapshot.val();
+          titleshop.innerHTML = snapshot.val().mess;
         });
       }
 
