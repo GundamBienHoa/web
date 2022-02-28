@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+
 p {
   margin: unset;
 }
@@ -23,6 +25,8 @@ p {
 .name-menu {
   text-align: center;
   padding-top: 20px;
+  color: #f54332;
+  font-family: "Saira Stencil One", cursive;
 }
 
 .menu-pro {
@@ -33,7 +37,7 @@ p {
 }
 
 .item-pro {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffff;
   position: relative;
   overflow: hidden;
