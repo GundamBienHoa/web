@@ -252,6 +252,10 @@ p {
   padding-top: 1px;
 }
 
+.end-slot {
+  color: #ff1313;
+}
+
 @media screen and (max-width: 500px) {
   .menu-pro {
     grid-template-columns: 1fr 1fr;

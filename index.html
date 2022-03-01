@@ -226,9 +226,11 @@
                   )} <span class="vnd-set"> VND </span></p>
                 </div>
                 <div class="mini-container">
-                  <p>Slot: <span> ${
-                    element.status == true ? `Còn` : "Hết"
-                  } </span></p>
+                  <p  class="${
+                    element.status == false ? `end-slot` : ``
+                  }">Slot: <span> ${
+            element.status == true ? `Còn` : "Hết"
+          } </span></p>
                   <p class="mini-price">Cọc: <span> ${formatPrice(
                     element.deposit
                   )}<span class="vnd-set-mini"> VND </span> </span></p>
